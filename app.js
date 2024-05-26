@@ -1,66 +1,76 @@
 const products = [
     // Electronics
     {
-        name: "Wireless Mouse",
-        price: 25.99,
-        category: "Electronics",
-        brand: "Logitech"
+        name: "SPARK Go 2024",
+        price: 21299,
+        category: "Smartphones",
+        brand: "TECNO",
+        url: 'https://static-01.daraz.pk/p/d093a0421a266accff2d4b8d23d3b57f.jpg_750x750.jpg_.webp'
     },
     {
-        name: "Smartphone",
-        price: 699.99,
-        category: "Electronics",
-        brand: "Samsung"
+        name: "13C",
+        price: 25249,
+        category: "Smartphones",
+        brand: "Redmi",
+        url: 'https://static-01.daraz.pk/p/f8a4839bf6a2b18bc830b422b6cddac5.jpg_750x750.jpg_.webp'
     },
     {
-        name: "LED Monitor",
-        price: 129.99,
-        category: "Electronics",
-        brand: "Dell"
+        name: "A3",
+        price: 20499,
+        category: "Smartphones",
+        brand: "Redmi",
+        url: 'https://static-01.daraz.pk/p/ada94bcebb9d4fb7f926cc5c7ba7d97d.jpg_750x750.jpg_.webp'
     },
     {
-        name: "Bluetooth Speaker",
-        price: 45.99,
-        category: "Electronics",
-        brand: "JBL"
+        name: "Note 50",
+        price: 23444,
+        category: "Smartphones",
+        brand: "Realme",
+        url: 'https://static-01.daraz.pk/p/74ddb6565b1888e0c474a470bf70c153.png_750x750.jpg_.webp'
     },
     {
-        name: "Laptop",
-        price: 999.99,
-        category: "Electronics",
-        brand: "Apple"
+        name: "A05",
+        price: 30999,
+        category: "Smartphones",
+        brand: "Samsung",
+        url: 'https://static-01.daraz.pk/p/5e2aa195de3e62658bd7b6162d322592.jpg_750x750.jpg_.webp'
     },
 
     // Footwear
     {
-        name: "Running Shoes",
-        price: 59.99,
-        category: "Footwear",
-        brand: "Nike"
+        name: "I12",
+        price: 770,
+        category: "Earbuds",
+        brand: "TWS",
+        url: 'https://static-01.daraz.pk/p/a76b10fc73f1e3f05c31de35044fd1ea.jpg_750x750.jpg_.webp'
     },
     {
-        name: "Sneakers",
-        price: 75.99,
-        category: "Footwear",
-        brand: "Adidas"
+        name: "I12",
+        price: 770,
+        category: "Earbuds",
+        brand: "TWS",
+        url: 'https://static-01.daraz.pk/p/a76b10fc73f1e3f05c31de35044fd1ea.jpg_750x750.jpg_.webp'
     },
     {
-        name: "Sandals",
-        price: 25.99,
-        category: "Footwear",
-        brand: "Teva"
+        name: "I12",
+        price: 770,
+        category: "Earbuds",
+        brand: "TWS",
+        url: 'https://static-01.daraz.pk/p/a76b10fc73f1e3f05c31de35044fd1ea.jpg_750x750.jpg_.webp'
     },
     {
-        name: "Formal Shoes",
-        price: 120.00,
-        category: "Footwear",
-        brand: "Clarks"
+        name: "I12",
+        price: 770,
+        category: "Earbuds",
+        brand: "TWS",
+        url: 'https://static-01.daraz.pk/p/a76b10fc73f1e3f05c31de35044fd1ea.jpg_750x750.jpg_.webp'
     },
     {
-        name: "Boots",
-        price: 150.00,
-        category: "Footwear",
-        brand: "Timberland"
+        name: "I12",
+        price: 770,
+        category: "Earbuds",
+        brand: "TWS",
+        url: 'https://static-01.daraz.pk/p/a76b10fc73f1e3f05c31de35044fd1ea.jpg_750x750.jpg_.webp'
     },
 
     // Home Appliances
