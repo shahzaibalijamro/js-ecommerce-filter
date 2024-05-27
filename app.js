@@ -261,27 +261,55 @@ const products = [
 
 const div = document.querySelector('.div');
 
-function renderProducts(thiss) {
-    console.log(thiss.innerHTML);
-    filteredArray.map((item)=>{
-        div.innerHTML += `
-        <div class="card" style="width: 18rem;">
+products.map(item => {
+    div.innerHTML += `
+<div class="card" style="width: 16rem;">
+    <div class="card-body">
+      <div class="text-center mb-2">
+        <img width="150px" height="150px" src=${item.url} alt="">
+      </div>
+      <h5 class="card-title">${item.name}</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">${item.brand}</h6>
+      <p class="card-text mb-1">${item.price} PKR</p>
+      <a href="#" class="card-link text-decoration-none">Add to Cart</a>
+    </div>
+</div>
+`});
+
+function renderProducts(index) {
+    div.innerHTML = '';
+    const filteredArray = products.filter(item => item.category === `${index.innerHTML}`);
+    if (index.innerHTML === 'All items') {
+        products.map(item => {
+            div.innerHTML += `
+        <div class="card" style="width: 16rem;">
             <div class="card-body">
               <div class="text-center mb-2">
-                <img width="150px" height='150px' src="${item.url}" alt="">
+                <img width="150px" height="150px" src=${item.url} alt="">
               </div>
               <h5 class="card-title">${item.name}</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">${item.brand}</h6>
-              <p class="card-text">${item.price} pkr</p>
-              <a href="#" class="card-link">Add to Cart</a>
+              <p class="card-text mb-1">${item.price} PKR</p>
+              <a href="#" class="card-link text-decoration-none">Add to Cart</a>
             </div>
         </div>
         `
-    })
+        })
+    } else {
+        filteredArray.map(item => {
+            div.innerHTML += `
+            <div class="card" style="width: 16rem;">
+            <div class="card-body">
+            <div class="text-center mb-2">
+            <img width="150px" height="150px" src=${item.url} alt="">
+            </div>
+            <h5 class="card-title">${item.name}</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">${item.brand}</h6>
+            <p class="card-text mb-1">${item.price} PKR</p>
+            <a href="#" class="card-link text-decoration-none">Add to Cart</a>
+            </div>
+            </div>
+            `
+        })
+    }
 }
-
-const filteredArray = products.filter((item)=>{
-    return item.category === 'Cameras'
-})
-
-renderProducts();
